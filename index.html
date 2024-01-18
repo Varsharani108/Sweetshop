@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <style>
+        header{
+            width:100%;
+            height:50px;
+            float: left;
+            box-sizing:border-box;
+            padding: 6px;
+        }
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        #brand{
+            padding: 0;
+            margin: 0;
+            font-family: sans-serif;
+            float: left;
+            margin-left: 24px;
+        }
+        #tag{
+            float: right;
+            margin: 0;
+            margin-top: 8px;
+            padding: 0;
+            font-family:Franklin Gothic Medium;
+            margin-right: 24px;
+        }
+        nav{
+            width: 100%;
+            height: 108px;
+            background-color: blue;
+            float:left;
+            box-sizing: border-box;
+            padding: 30px;
+        }
+        #search-btn{
+            width: 100px;
+            height: 40px;
+            float: left;
+            box-sizing: border-box;
+            border:none;
+            margin-left: 3px;
+            font-size: 16px;
+
+        }
+        #search{
+            width: 400px;
+            height: 40px;
+            float: left;
+            border: none;
+            box-sizing: border-box;
+            font-size: 15px;
+            padding: 10px;
+        }
+        #menu_table{
+            width: 600px;
+            height: 40px;
+            float: right;
+            text-align: center;
+
+        }
+        #menu_item{
+            background-color: white;
+            width: left;
+            
+
+        }
+        a{
+            text-decoration: none;
+            color:black;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        section{
+            width: 100%;
+            height: 1800px;
+            float: left;
+            border: none;
+            box-sizing: border-box;
+            border-width: 1px;
+            border-style: solid;
+            border-color:blue;
+        
+            
+        }
+        #Venue{
+            float: left;
+        }
+        #phone{
+            float: right;
+        }
+        #sweets-box{
+            width: 720px;
+            height:550px;
+            float: left;
+            box-sizing: border-box;
+            background-color:#52cd89a1;
+            margin-top: 30px;
+        }
+        #sweets-title{
+             font-size: 22px;
+             font-family:Georgia, 'Times New Roman', Times, serif;
+             text-align: center;
+             color:aliceblue
+        }
+        #img{
+            width: 300px;
+            height: 200px;
+            margin: 15px;
+            margin-left: 27px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: aliceblue;
+        }
+        #rate_list_box{
+            width:500px;
+            height:550px;
+            float: right;
+            box-sizing: border-box;
+            margin-top: 35px;
+
+        }
+        #name_header{
+            height: 50px;
+            background-color: black;
+            text-align: center;
+            color: aliceblue;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+
+        }
+        #rate_content{
+            background-color: blue;
+        }
+        #item_name{
+            margin: 20px;
+            font-size: 25px;
+            font-family: Impact, sans-serif;
+            border-bottom-width: 2px;
+            border-bottom-style: solid;
+        }
+        #item_rate{
+            list-style: none;
+            margin: 20px;
+            border-bottom-width: 2px;
+            border-bottom-style: solid;
+            font-size: 25px;
+            font-family: Impact, sans-serif;
+
+        }
+        #order_tag{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 22px;
+
+        }
+        fieldset{
+            width: 690px;
+            height: 550px;
+            border-width:"2px";
+            border-color: #ccc;
+            float: left;
+            margin-top: 50px;
+            padding: 15px;
+
+        }
+        textarea{
+            width: 100%;
+            height: 100px;
+        }
+        #order{
+            font-size: 18px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }#order_input{
+            width: 100%;
+            height: 40px;
+            box-sizing: border-box;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #ccc;
+            margin-top: 5px;
+        }
+        #sbt_order{
+            font-size: 15px;
+            width: 100px;
+            height: 40px;
+            float: right;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #ccc;
+        }
+        #abt_us{
+            width: 500px;
+            height: 575px;
+            border-color: #ccc;
+            border-style: solid;
+            border-width: 2px;
+            box-sizing: border-box;
+            float: right;
+            font-size: 25px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif,bold;
+            text-align: center;
+            padding: 20px;
+            margin-top: 57px;
+            font-weight: bold;
+        }
+        #about_text{
+            font-size: 18px;
+            text-align: justify;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            line-height: 30px;
+            font-weight: normal;
+        }
+        #m_sweets{
+            float: left;
+            width: 100%;
+        }
+        #more_sweets{
+            text-align: center;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 30px;
+            margin-top: 50px;
+            text-align: center;
+
+        }
+        #Sweets{
+            width: 220px;
+            height: 250px;
+            border-style: solid;
+            border-color: #9c8686;
+            border-width: 1px;
+            float:left;
+            margin: 30px;
+            margin-right: 10px;
+        }
+        #sweet_pic{
+            width: 220px;
+            height:200px ;
+        }
+        #btn{
+            padding: 10px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #ccc;
+            
+        }
+        footer{
+            width: 100%;
+            height: 250px;
+            background-color: black;
+            float: left;
+        }
+        #contactus{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 25px;
+            float: left;
+            margin-left: 50px;
+            margin-top: 20px;
+            color: blanchedalmond;
+            margin-top: 20px;
+
+        }
+    #contact_detail{
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 20px;
+        color: aliceblue;
+    }
+    #follow_us{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 25px;
+            float: right;
+            margin-right: 100px;
+            margin-top: 20px;
+            color: blanchedalmond;
+            margin-top:20px;
+            font-weight: normal;
+    }
+    #social_link{
+        margin-right: 30px;
+        float: right;
+    }
+    #link{
+        margin-right: 10px;
+
+    }
+    #developer{
+        float: left;
+        font-size: 17px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-align: center;
+        color: aquamarine;
+        margin-left: 250px;
+        margin-top: 10px;
+    }
+        
+    
+    
+
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="brand">Sweetshop.com</h1>
+        <p id="tag">The world's largest sweets and bakeries shop</p>
+    </header>
+    <nav>
+        <form>
+            <input type="search" placeholder="search your sweets here" id="search">
+            <input type="submit" id="search-btn" value="search" name="search">
+        </form>
+        <table id="menu_table">
+            <tr>
+                <td id="menu_item"><a href="index.html">Home</a></td>
+                <td id="menu_item"><a href="sweets.html">Sweets</a></td>
+                <td id="menu_item"><a href="#">Bakeries</a></td>
+                <td id="menu_item"><a href="#abt_us">About us</a></td>
+                <td id="menu_item"><a href="#contactus">Contact us</a></td>
+            </tr>
+        </table>
+    </nav>
+    <section>
+        <address id="Venue"> Venue:Pipra,Chowk,Begusari-851117</address>
+        <address id="phone">Order Online: +91 9955209492</address><br>
+        <div id="sweets-box">
+            <h1 id="sweets-title">OUR POPULAR SWEETS</h1>
+            <img src="sweetimage/sweet.JPG"id="img">
+            <img src="sweetimage/sweet1.JPG"id="img">
+            <img src="sweetimage/sweet2.JPG"id="img">
+            <img src="sweetimage/sweet4.JPG"id="img">
+
+        </div>
+        <table id="rate_list_box">
+            <tr>
+                <td id="name_header">Sweet Name</td>
+                <td id="name_header">Price</td>
+            </tr>
+            <tr>
+                <td id="rate_content">
+                    <ol>
+                    <li id="item_name">Rasgulla</li>
+                    <li id="item_name">Barfi</li>
+                    <li id="item_name">Sawnpapri</li>
+                    <li id="item_name">Kajukatli</li>
+                    <li id="item_name">Raskadam</li>
+                    <li id="item_name">Pedda</li>
+                    <li id="item_name">Jalewi</li>
+                    <li id="item_name">Chamcham</li>
+                    <li id="item_name">Laddu</li>
+                    </ol>
+                </td>
+                <td id="rate_content">
+                    <ol>
+                        <li id="item_rate"> 200/kg</li>
+                        <li id="item_rate"> 200/kg</li>
+                        <li id="item_rate"> 200/kg</li>
+                        <li id="item_rate"> 200/kg</li>
+                        <li id="item_rate"> 200/kg</li>
+                        <li id="item_rate"> 200/kg</li>
+                        <li id="item_rate"> 200/kg</li>
+                        <li id="item_rate"> 200/kg</li>
+                        <li id="item_rate"> 200/kg</li>
+                    
+                    </ol>
+                </td>
+
+            </tr>
+        </table>
+        <fieldset id="form" ><legend id="order_tag">Order Online</legend>
+            <form id="order_online">
+                Buyer name:<input type="text" name="name"placeholder="Enter your name here"id="order_input"><br><br>
+                Mobile No.:<input type="number" name="number" placeholder="Enter your contact number"id="order_input"><br><br>
+                Choose Sweet:
+                <select id="order_input">
+                    <option>Rasgulla</option>
+                    <option>Pedda</option>
+                    <option>Barfee</option>
+                    <option>Kajukatli</option>
+                    <option>Chamcham</option>
+                    <option>Laddu</option>
+                    <option>Sawnpapri</option>
+                    <option>Jalewi</option>
+                    <option>Raskadam</option>
+                </select><br><br>
+                Quantity:<input type="number"name="number"placeholder="Enter the quantity of sweets"id="order_input"><br><br>
+                Address:
+                <textarea></textarea><br><br>
+                <input type="submit" name="submit"value="Order Now!"id="sbt_order">
+                
+
+            </form>
+        </fieldset>
+        <div id="abt_us">About Us<hr>
+            <p id="about_text">"Welcome to Rishikesh Sweets! We are more than just a store; we are the embodiment of delight and indulgence in the form of delectable treats. Our journey began with a passion for crafting exceptional sweets that captivate the senses and bring joy to every moment.
+
+                At Rishikesh Sweets, we take pride in curating an extensive collection of handcrafted confections, each made with the finest ingredients and an abundance of love. From classic favorites that evoke nostalgic memories to innovative creations that redefine sweetness.Thank you for choosing Rishikesh Sweets - where every bite is a delightful experience!"
+
+            </p>
+        </div>
+
+        <div id="m_sweets">
+            <h1 id="more_sweets">More Sweets</h1>
+        </div>
+        <div id="Sweets"><img src="sweetimage/sweet5.jpg"id="sweet_pic">
+        <center><a href="#form"><button id="btn">Buy Now</button></a></center></div>
+    
+        <div id="Sweets"><img src="sweetimage/sweet6.jpg"id="sweet_pic">
+            <center><a href="#form"><button id="btn">Buy Now</button></a></center></div>
+
+        <div id="Sweets"><img src="sweetimage/sweet7.jpg"id="sweet_pic">
+            <center><a href="#form"><button id="btn">Buy Now</button></a></center></div>
+
+        <div id="Sweets"><img src="sweetimage/sweet8.jpg"id="sweet_pic">
+            <center><a href="#form"><button id="btn">Buy Now</button></a></center></div>
+
+        <div id="Sweets"><img src="sweetimage/sweet9.jpg"id="sweet_pic">
+            <center><a href="#form"><button id="btn">Buy Now</button></a></center></div>
+    </section>
+    <footer>
+        <div id="contactus">Contact Us
+            <address id="contact_detail">Website : Sweetshop.com</address>
+            <address id="contact_detail">Phone No. : +91 9955209492</address>
+            <address id="contact_detail">Address : Pipra ,Chowk ,Begusarai</address>
+        </div>
+        <div id="developer">Develpoed By:Varsha Rani</div>
+        <div id="social_link"><h1 id="follow_us">Follow Us</h1><br>
+    
+                <a href="#"><img id="link"src="sweetimage/f.png"></a>
+                <a href="#"><img id="link"src="sweetimage/insta.png"></a>
+                <a href="#"><img id="link"src="sweetimage/twitter.png"></a>
+        
+        </div>
+    </footer>
+</body>
+</html>
